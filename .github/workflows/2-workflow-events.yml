@@ -1,9 +1,6 @@
 name: Workflow Events
 
-on:
-  workflow_dispatch:   # Manual trigger
-  push:                # Trigger on any push
-  pull_request:        # Trigger on PR events
+on: [workflow_dispatch,pull_request,push]      
 
 jobs:
   echo:
